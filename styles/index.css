@@ -1,9 +1,29 @@
 body {
-    background-color: black;
+    background: url("../img/cat.gif") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-h3 {
+h1 {
+    font-family: Impact;
+    color: white;
+    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black;
+    font-size: min(10vw, 100px);
+    text-transform: uppercase;
+}
+
+#top-text {
+    position: fixed;
+    top: 0;
+    width: 100%;
     text-align: center;
-    color: black;
-    font-family: 'Lucida Sans';
+}
+
+#bottom-text {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
