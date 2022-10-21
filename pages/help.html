@@ -28,21 +28,29 @@
     <link rel="stylesheet" href="/dist/style.css"> 
     <script src="https://kit.fontawesome.com/5acf4d9e80.js" crossorigin="anonymous"></script>
 
-    <title>Home | PhiloCraft</title>
+    <title>Commands | PhiloCraft</title>
 </head>
 <body>
     <div class="bg"></div>
     <div class="animation-wrapper"> <div class="particle particle-1"></div> <div class="particle particle-2"></div> <div class="particle particle-3"></div> <div class="particle particle-4"></div> </div>
     <div class="center">
-        <div>
-            <h1>PhiloCraft</h1>
-            <p>Private SMP server | 1.19.2</p>
-            <div>
-                <a href="https://discord.gg/F2upgYUDFa" target="_blank"><button class="btn1"><i class="fab fa-discord"></i> Discord</button></a>
-                <a href="/pages/help.html"><button class="btn2"><i class="fas fa-poll"></i> Help</button></a>
-                <a href="#"><button class="btn3"><i class="fas fa-poll"></i> Stats</button></a>
-                <a href="http://127.0.0.1:25566" target="_blank"><button class="btn4"><i class="fas fa-poll"></i> DynMap</button></a>
-            </div>
+        <h1 id="header">Command list</h1>
+        <div class="command-list">
+            <span class="command">/tpa &lt;playerName&gt;<div class="description">Teleport you to a player</div></span>
+            <span class="command">/tpahere &lt;playerName&gt;<div class="description">Teleports a player to you</div></span>
+            <span class="command">/tpcancel &lt;&gt;<div class="description">Cancels your teleportation request</div></span>
+            <span class="command">/tpaccept &lt;&gt;<div class="description">Accepts a teleportation request</div></span>
+            <span class="command">/tpdeny &lt;&gt;<div class="description">Denys a teleportation request</div></span>
+            <span class="command">/sethome &lt;homeName&gt;<div class="description">Sets a new home</div></span>
+            <span class="command">/delhome &lt;homeName&gt;<div class="description">Deletes a home</div></span>
+            <span class="command">/homes &lt;&gt;<div class="description">Shows your homes</div></span>
+            <span class="command">/home &lt;homeName&gt;<div class="description">Teleports you to your home</div></span>
+            <span class="command">/msg &lt;playerName&gt; &lt;messageContent&gt;<div class="description">Privately messages a player</div></span>
+            <span class="command">/r &lt;messageContent&gt;<div class="description">Replies to your last message</div></span>
+            <span class="command">/rankinfo &lt;&gt;<div class="description">Shows information in chat about how to obtain ranks</div></span>
+            <span class="command">/alteritem &lt;name/lore&gt; &lt;newName&gt;<div class="description">Allows you to edit the name or the lore of an item with color</div></span>
+            <span class="command">/particle &lt;set/remove&gt; &lt;particleName&gt;<div class="description">Allows you to either set or remove any particle in the game as a trail</div></span>
+                        
         </div>
     </div>
     <img class="logo" src="/assets/logo.ico">

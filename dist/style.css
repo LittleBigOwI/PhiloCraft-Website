@@ -34,9 +34,37 @@ body {
   --animate-duration: 2s;
 }
 
+#header {
+  text-align: center;
+}
+
+.logo {
+  position: absolute;
+  width: auto;
+  height: 5%;
+  right: 10px;
+  bottom: 10px;
+}
+
+.command-list {
+  text-align: left;
+  display: grid;
+  grid-template-columns: 11em 11em 11em;
+}
+
+.command {
+  font-size: 0.5em;
+  display: inline-block;
+  padding: 20px;
+}
+
+.description {
+  font-size: 0.5em;
+}
+
 .bg {
   background-image: url("../assets/background.png");
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   filter: blur(7px);
@@ -87,6 +115,8 @@ button {
           filter: drop-shadow(8px 8px 1px #e4e4e4);
   -webkit-transition: 0.1s;
   transition: 0.1s;
+  width: auto;
+  height: 100%;
 }
 
 button:hover {
@@ -139,6 +169,21 @@ button:hover {
           filter: drop-shadow(0 0 0 #4b0324);
 }
 
+@media screen and (max-width:2100px) {
+  .command-list {
+    grid-template-columns: 11em 11em;
+  }
+}
+
+@media screen and (max-width:1400px) {
+  .command-list {
+    grid-template-columns: 11em;
+  }
+  .command {
+    font-size: 0.4em;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .buttons {
     width: 80px;
@@ -164,7 +209,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 4rem;
-  overflow: hidden;
+  overflow: scroll;
+  background-attachment: fixed;
 }
 
 .page-bg,
