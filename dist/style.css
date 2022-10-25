@@ -39,7 +39,7 @@ body {
 }
 
 .logo {
-  position: absolute;
+  position: fixed;
   width: auto;
   height: 5%;
   right: 10px;
@@ -177,10 +177,10 @@ button:hover {
 
 @media screen and (max-width:1400px) {
   .command-list {
-    grid-template-columns: 11em;
+    grid-template-columns: 1fr;
   }
   .command {
-    font-size: 0.4em;
+    font-size: 1rem;
   }
 }
 
