@@ -50,6 +50,7 @@ body {
   text-align: left;
   display: grid;
   grid-template-columns: 11em 11em 11em;
+  overflow: scroll;
 }
 
 .command {
@@ -209,7 +210,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 4rem;
-  overflow: scroll;
+  overflow: hidden;
   background-attachment: fixed;
 }
 
