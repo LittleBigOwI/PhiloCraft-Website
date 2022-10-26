@@ -50,7 +50,6 @@ body {
   text-align: left;
   display: grid;
   grid-template-columns: 11em 11em 11em;
-  overflow: scroll;
 }
 
 .command {
