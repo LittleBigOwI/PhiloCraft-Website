@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fredoka+One&family=Poppins:wght@400;700&display=swap');
+
+html {
+    min-height: 100%;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    position: fixed;
+    top:0px;
+    height: 100px;
+    width: 100%;
+    left: 0px;
+}
+
+label.logo {
+    color: white;
+    font-size: 40px;
+    line-height: 100px;
+    padding-left: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+nav ul {
+    float: right;
+    margin-right: 2rem;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 70px;
+}
+
+nav ul li a {
+    padding: 7px 13px;
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#home:hover, #home.active{
+    background: slategray;
+    transition: .5s;
+}
+
+#commands:hover, #commands.active{
+    background: #ecc900;
+    transition: .5s;
+}
+
+#map:hover{
+    background: #cf0057;
+    transition: .5s;
+}
+
+#discord:hover {
+    background: #5865f2;
+    transition: .5s;
+}
+
+#store:hover, #store.active{
+    background: #3fd50f;
+    transition: .5s;
+}
+
+#login:hover, #login.active{
+    background: slategray;
+    transition: .5s;
+}
+
+.commands {
+    margin-left: 21%;
+    margin-right: 21%;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+
+    /*border: 2px solid black;
+    border-radius: 5px;*/
+}
+
+.command {
+    color: white;
+    margin-right: 8px;
+
+    /*border: 2px solid black;
+    border-radius: 5px;*/
+}
+
+h3 {
+    line-height: 20px;
+    font-weight: 200;
+}
+
+@media (max-width:810px){
+    
+    nav ul {
+        display: none;
+    }
+
+    .commands {
+        font-size: 80%;
+    }
+}
+
+@media (max-width:959px){
+    label.logo {
+        font-size: 30px;
+        padding-left: 25px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
