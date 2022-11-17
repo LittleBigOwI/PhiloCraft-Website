@@ -87,6 +87,7 @@ nav ul li a {
     margin-top: 10%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+    transition: .5s;
 
     /*border: 2px solid black;
     border-radius: 5px;*/
@@ -112,7 +113,8 @@ h3 {
     }
 
     .commands {
-        font-size: 80%;
+        
+        font-size: 75%;
     }
 }
 
@@ -124,5 +126,12 @@ h3 {
 
     nav ul li a {
         font-size: 16px;
+    }
+
+    .commands {
+        margin-top: 19%;
+        margin-left: 10%;
+        margin-right: 10%;
+        overflow: hidden;
     }
 }

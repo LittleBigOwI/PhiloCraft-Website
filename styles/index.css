@@ -177,6 +177,12 @@ h3 {
     }
 }
 
+a.url {
+    color: lightskyblue;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 @media (max-width:890px){
     #profile-picture {
         display: none;
