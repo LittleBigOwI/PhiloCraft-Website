@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="store-page">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/pages.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="../js/store.js" defer></script>
+
+    <title>Store - PhiloCraft</title>
+</head>
+<body>
+    <div class="splash">
+        <div class="modal">
+            <i class="fa fa-times" aria-hidden="true" onclick="return hideInfo()"></i><h2>Title</h2>
+            <p class="modal-description"></p>
+        </div>
+    </div>
+
+    <nav class="store-page">
+        <label class="logo">PhiloCraft</label>
+        <ul>
+            <li><a href="../index.html" id="home">Home</a></li>
+            <li><a href="./commands.html" id="commands">Commands</a></li>
+            <li><a href="https://map.littlebigowl.dev" target="_blank" id="map">Map</a></li>
+            <li><a href="https://discord.gg/F2upgYUDFa" target="_blank" id="discord">Discord</a></li>
+            <li><a href="" id="store" class="active">Store</a></li>
+            <li><a href="./login.html" id="login">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="store">
+        <aside class="aside">
+            <ul>
+                <li><a id="ranks" class="menu-active" href="" type="button" onclick="return showRanks()"><i class="fa fa-user" aria-hidden="true"></i>Ranks</a></li>
+                <li><a id="homes" href="" type="button" onclick="return showHomes()"><i class="fa fa-home" aria-hidden="true"></i>Homes</a></li>
+                <li><a id="donations" href="" type="button" onclick="return showDonations()"><i class="fa fa-usd" aria-hidden="true"></i>Donations</a></li>
+                <li><a id="packs" href="" type="button" onclick="return showPacks()"><i class="fa fa-dropbox" aria-hidden="true"></i>Packs</a></li>
+            </ul>
+        </aside>
+        <div class="products">
+            <div class="menu-mobile">
+                <ul>
+                    <li><a id="ranksMobile" class="menu-active" href="" type="button" onclick="return showRanks()">Ranks</a></li>
+                    <li><a id="homesMobile" href="" type="button" onclick="return showHomes()">Homes</a></li>
+                    <li><a id="donationsMobile" href="" type="button" onclick="return showDonations()">Donations</a></li>
+                    <li><a id="packsMobile" href="" type="button" onclick="return showPacks()">Packs</a></li>
+                </ul>
+            </div>
+            <div class="products">
+                <div class="product"><img src="../images/donator1.png" alt="1 month donator"><button class="buy" onclick="buy('1donator')">Buy</button><button class="info" onclick="return showRankInfo('donator', '1', '5')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
+                <div class="product"><img src="../images/donator2.png" alt="2 months Donator"><button class="buy" onclick="buy('2donator')">Buy</button><button class="info" onclick="return showRankInfo('donator', '2', '9.99')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
+                <div class="product"><img src="../images/donator3.png" alt="3 months Donator"><button class="buy" onclick="buy('3donator')">Buy</button><button class="info" onclick="return showRankInfo('donator', '3', '13.99')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
+                <div class="product"><img src="../images/ultimate1.png" alt="1 month Ultimate"><button class="buy" onclick="buy('1ultimate')">Buy</button><button class="info" onclick="return showRankInfo('ultimate', '1', '10')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
+                <div class="product"><img src="../images/ultimate2.png" alt="2 months Ultimate"><button class="buy" onclick="buy('2ultimate')">Buy</button><button class="info" onclick="return showRankInfo('ultimate', '2', '17.99')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
+                <div class="product"><img src="../images/ultimate3.png" alt="3 months Ultimate"><button class="buy" onclick="buy('3ultimate')">Buy</button><button class="info" onclick="return showRankInfo('ultimate', '3', '26.99')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
+            </div>
+            </div>
+    </div>
+
+    <h1 id="footer">mc.philocraft.net</h1>
+
+</body>

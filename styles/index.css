@@ -2,16 +2,17 @@
 
 html {
     min-height: 100%;
-    background-image: url("../images/background.png");
+    background-image: url("../images/background-default.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 nav {
-    background-image: url("../images/background.png");
+    background-image: url("../images/background-default.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -138,6 +139,7 @@ nav ul li a {
 .command {
     color: white;
     margin-right: 8px;
+
     /*border: 2px solid black;
     border-radius: 5px;*/
 }
@@ -145,6 +147,37 @@ nav ul li a {
 h3 {
     line-height: 20px;
     font-weight: 200;
+}
+
+a.url {
+    color: lightskyblue;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a.url:hover {
+    text-decoration: underline;
+}
+
+a.url:visited {
+    color: lightpink;
+}
+
+@media (max-width:959px){
+    label.logo {
+        font-size: 30px;
+        padding-left: 25px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:890px){
+    #profile-picture {
+        display: none;
+    }
 }
 
 @media (max-width:810px){
@@ -174,28 +207,5 @@ h3 {
 
     .posts {
         display:none;
-    }
-}
-
-a.url {
-    color: lightskyblue;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-@media (max-width:890px){
-    #profile-picture {
-        display: none;
-    }
-}
-
-@media (max-width:959px){
-    label.logo {
-        font-size: 30px;
-        padding-left: 25px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
     }
 }
