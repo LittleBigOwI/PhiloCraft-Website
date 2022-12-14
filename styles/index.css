@@ -143,10 +143,58 @@ nav ul li a {
     /*border: 2px solid black;
     border-radius: 5px;*/
 }
+.index-content {
+    margin-left: 21%;
+    margin-right: 21%;
+    margin-top: 15%;
+}
+
+h1 {
+    text-align: left;
+    font-size: 100px;
+    color: white;
+    margin-bottom: 0px;
+    line-height: 100px;
+}
+
+h2 {
+    margin-top: 0px;
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
 
 h3 {
     line-height: 20px;
     font-weight: 200;
+}
+
+.buttons {
+    text-align: center;
+    width: 100%;
+    height: 10%;
+}
+
+.index-info {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    border-radius: 30px;
+    height: 50px;
+    width: 200px;
+    border-style: none;
+    background-color: #5865f2;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    transition: .5s;
+    margin-top: 100px;
+}
+
+.index-info:hover {
+    cursor: pointer;
+    background-color: #3b43a4;
 }
 
 a.url {
@@ -172,11 +220,9 @@ a.url:visited {
     nav ul li a {
         font-size: 16px;
     }
-}
 
-@media (max-width:890px){
-    #profile-picture {
-        display: none;
+    h1 {
+        font-size: 80px;
     }
 }
 
@@ -205,7 +251,7 @@ a.url:visited {
 
     }
 
-    .posts {
+    .posts, .index-content {
         display:none;
     }
 }
