@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../styles/pages.css">
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <title>About - PhiloCraft</title>
 </head>
@@ -23,8 +25,29 @@
         </ul>
     </nav>
 
-
-
-
+    <h3 id="commands-title">History & Info</h3>
+    <p class="about-info">Philocraft is a private 1.19.2 SMP server created in june 2022 for the 1.18 update. 
+    It was originially made because not many servers were using 1.18 as it is badly optimised and amongst the servers that were using 1.18 most of them didn't fit me and my friends taste. 
+    Over the next few months more people have started joining and plugins such as BlueMap and my own have been introduced. There are now different ranks, commands and claims are comming soon! 
+    The server now runs on 1.19.2 and whitelisting is enabled, so join the discord and for a whitelist! We hope to see you soon. 
+    </p>
+    <p class="about-info">
+    Server Info : <br>
+    - CPU : Ryzen 5 5600 <br>
+    - RAM : 16GB DDR4 <br>
+    - STORAGE : SATA SSD 500GB <br>
+    - OS : UBUNTU <br>
+    - IP : mc.littlebigowl.dev <br>
+    </p>
+    <p class="about-info">
+        Creators : <br>
+        - LittleBigOwl <br>
+    </p>
+    <p class="about-info">All rights reserved 2022 &#169;</p>
+    <h3 id="commands-title">Total amount of players on the server in 2022</h3>
+    <div class="chart"><canvas id="chart"></canvas></div>
+      
+    <script src="../js/about.js"></script>
+      
 </body>
 </html>
