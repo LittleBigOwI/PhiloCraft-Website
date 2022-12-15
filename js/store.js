@@ -48,12 +48,12 @@ function unlockScroll() {
 
 function showRanks() {
     products.innerHTML = `
-        <div class="product"><img src="../images/donator1.png" alt="1 month donator"><button class="buy" onclick="buy('1donator')">Buy</button><button class="info" onclick="return showRankInfo('donator', '1', '5')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
-        <div class="product"><img src="../images/donator2.png" alt="2 months Donator"><button class="buy" onclick="buy('2donator')">Buy</button><button class="info" onclick="return showRankInfo('donator', '2', '9.99')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
-        <div class="product"><img src="../images/donator3.png" alt="3 months Donator"><button class="buy" onclick="buy('3donator')">Buy</button><button class="info" onclick="return showRankInfo('donator', '3', '13.99')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
-        <div class="product"><img src="../images/ultimate1.png" alt="1 month Ultimate"><button class="buy" onclick="buy('1ultimate')">Buy</button><button class="info" onclick="return showRankInfo('ultimate', '1', '10')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
-        <div class="product"><img src="../images/ultimate2.png" alt="2 months Ultimate"><button class="buy" onclick="buy('2ultimate')">Buy</button><button class="info" onclick="return showRankInfo('ultimate', '2', '17.99')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
-        <div class="product"><img src="../images/ultimate3.png" alt="3 months Ultimate"><button class="buy" onclick="buy('3ultimate')">Buy</button><button class="info" onclick="return showRankInfo('ultimate', '3', '26.99')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
+        <div class="product"><img src="../assets/images/donator1.png" alt="1 month donator"><button class="buy" onclick="buy('1donator')">Buy</button><button class="info" onclick="return showRankInfo('donator', '1', '5')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
+        <div class="product"><img src="../assets/images/donator2.png" alt="2 months Donator"><button class="buy" onclick="buy('2donator')">Buy</button><button class="info" onclick="return showRankInfo('donator', '2', '9.99')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
+        <div class="product"><img src="../assets/images/donator3.png" alt="3 months Donator"><button class="buy" onclick="buy('3donator')">Buy</button><button class="info" onclick="return showRankInfo('donator', '3', '13.99')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
+        <div class="product"><img src="../assets/images/ultimate1.png" alt="1 month Ultimate"><button class="buy" onclick="buy('1ultimate')">Buy</button><button class="info" onclick="return showRankInfo('ultimate', '1', '10')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
+        <div class="product"><img src="../assets/images/ultimate2.png" alt="2 months Ultimate"><button class="buy" onclick="buy('2ultimate')">Buy</button><button class="info" onclick="return showRankInfo('ultimate', '2', '17.99')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
+        <div class="product"><img src="../assets/images/ultimate3.png" alt="3 months Ultimate"><button class="buy" onclick="buy('3ultimate')">Buy</button><button class="info" onclick="return showRankInfo('ultimate', '3', '26.99')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
     `;
 
     ranksButton.classList.add("menu-active");
@@ -73,9 +73,9 @@ function showRanks() {
 
 function showHomes() {
     products.innerHTML = `
-        <div class="product"><img src="../images/home1.png" alt="1 home for 1 dollar"><button class="buy" onclick="buy()">Buy</button><button class="info" onclick="return showHomeInfo('1', '1')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
-        <div class="product"><img src="../images/home2.png" alt="5 homes for 4.99 dollars"><button class="buy" onclick="buy()">Buy</button><button class="info" onclick="return showHomeInfo('5', '4.99')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
-        <div class="product"><img src="../images/home3.png" alt="10 homes for 8.99 dollars"><button class="buy" onclick="buy()">Buy</button><button class="info" onclick="return showHomeInfo('10', '8.99')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
+        <div class="product"><img src="../assets/images/home1.png" alt="1 home for 1 dollar"><button class="buy" onclick="buy()">Buy</button><button class="info" onclick="return showHomeInfo('1', '1')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
+        <div class="product"><img src="../assets/images/home2.png" alt="5 homes for 4.99 dollars"><button class="buy" onclick="buy()">Buy</button><button class="info" onclick="return showHomeInfo('5', '4.99')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
+        <div class="product"><img src="../assets/images/home3.png" alt="10 homes for 8.99 dollars"><button class="buy" onclick="buy()">Buy</button><button class="info" onclick="return showHomeInfo('10', '8.99')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
     `;
 
     ranksButton.classList.remove("menu-active");
@@ -95,12 +95,12 @@ function showHomes() {
 
 function showDonations() {
     products.innerHTML = `
-        <div class="product"><img src="../images/donation1.png" alt="1 dollar donation"><button class="buy" onclick="buy()">Donate</button></div>
-        <div class="product"><img src="../images/donation2.png" alt="5 dollar donation"><button class="buy" onclick="buy()">Donate</button></div>
-        <div class="product"><img src="../images/donation3.png" alt="10 dollar donation"><button class="buy" onclick="buy()">Donate</button></div>
-        <div class="product"><img src="../images/donation4.png" alt="20 dollar donation"><button class="buy" onclick="buy()">Donate</button></div>
-        <div class="product"><img src="../images/donation5.png" alt="50 dollar donation"><button class="buy" onclick="buy()">Donate</button></div>
-        <div class="product"><img src="../images/donation6.png" alt="Custom donation"><button class="buy" onclick="buy()">Donate</button></div>
+        <div class="product"><img src="../assets/images/donation1.png" alt="1 dollar donation"><button class="buy" onclick="buy()">Donate</button></div>
+        <div class="product"><img src="../assets/images/donation2.png" alt="5 dollar donation"><button class="buy" onclick="buy()">Donate</button></div>
+        <div class="product"><img src="../assets/images/donation3.png" alt="10 dollar donation"><button class="buy" onclick="buy()">Donate</button></div>
+        <div class="product"><img src="../assets/images/donation4.png" alt="20 dollar donation"><button class="buy" onclick="buy()">Donate</button></div>
+        <div class="product"><img src="../assets/images/donation5.png" alt="50 dollar donation"><button class="buy" onclick="buy()">Donate</button></div>
+        <div class="product"><img src="../assets/images/donation6.png" alt="Custom donation"><button class="buy" onclick="buy()">Donate</button></div>
     `;
 
     ranksButton.classList.remove("menu-active");
@@ -120,10 +120,10 @@ function showDonations() {
 
 function showPacks() {
     products.innerHTML = `
-        <div class="product"><img src="../images/pack1.png" alt="Starter pack for 3 dollars"><button class="buy" onclick="buy()">Buy</button><button class="info" onclick="return showPackInfo('starter', '3')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
-        <div class="product"><img src="../images/pack2.png" alt="Music pack for 5 dollars"><button class="buy" onclick="buy()">Buy</button><button class="info" onclick="return showPackInfo('music', '5')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
-        <div class="product"><img src="../images/pack3.png" alt="Redstone pack for 10 dollars"><button class="buy" onclick="buy()">Buy</button><button class="info" onclick="return showPackInfo('redstone', '10')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
-        <div class="product"><img src="../images/pack4.png" alt="PVP pack for 10 dollars"><button class="buy" onclick="buy()">Buy</button><button class="info" onclick="return showPackInfo('PVP', '10')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
+        <div class="product"><img src="../assets/images/pack1.png" alt="Starter pack for 3 dollars"><button class="buy" onclick="buy()">Buy</button><button class="info" onclick="return showPackInfo('starter', '3')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
+        <div class="product"><img src="../assets/images/pack2.png" alt="Music pack for 5 dollars"><button class="buy" onclick="buy()">Buy</button><button class="info" onclick="return showPackInfo('music', '5')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
+        <div class="product"><img src="../assets/images/pack3.png" alt="Redstone pack for 10 dollars"><button class="buy" onclick="buy()">Buy</button><button class="info" onclick="return showPackInfo('redstone', '10')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
+        <div class="product"><img src="../assets/images/pack4.png" alt="PVP pack for 10 dollars"><button class="buy" onclick="buy()">Buy</button><button class="info" onclick="return showPackInfo('PVP', '10')"><i class="fa fa-info" aria-hidden="true"></i></button></div>
     `;
 
     ranksButton.classList.remove("menu-active");
