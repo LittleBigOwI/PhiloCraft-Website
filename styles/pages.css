@@ -38,6 +38,14 @@ label.logo {
     font-weight: 700;
 }
 
+a.logo {
+    font-size: 40px;
+}
+
+label.logo:hover {
+    cursor: pointer;
+}
+
 nav ul {
     float: right;
     margin-right: 2rem;
@@ -90,7 +98,6 @@ nav ul li a {
 .commands {
     margin-left: 21%;
     margin-right: 21%;
-    margin-top: 10%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
     transition: .5s;
@@ -319,6 +326,17 @@ h2 {
     z-index: 4;
 }
 
+#commands-title {
+    margin-top: 160px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    font-size: 30px;
+    margin-bottom: 80px;
+}
+
 .fa-times {
     color: white;
     height: 26px;
@@ -341,6 +359,11 @@ h2 {
 
 .lock-scroll {
     overflow: hidden;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
 }
 
 @media (max-width:1687px) {
@@ -374,7 +397,6 @@ h2 {
     }
 
     .commands {
-        margin-top: 19%;
         margin-left: 10%;
         margin-right: 10%;
         overflow: hidden;
